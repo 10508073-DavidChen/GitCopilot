@@ -43,7 +43,7 @@
 @par Specification Reference:
 **/
 
-#include "PlatformBoardId.h"
+include "PlatformBoardId.h"
 #include <Include/AcpiDebug.h>
 #include <Register/PmcRegs.h>
 
