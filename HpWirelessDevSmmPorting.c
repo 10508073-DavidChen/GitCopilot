@@ -12,7 +12,7 @@
 // Module Name:
 //   HpWirelessDevSmmPorting.c
 //
-if defined(CONDEV_ENABLE_ALL_DBG_MSG)
+#if defined(CONDEV_ENABLE_ALL_DBG_MSG)
 #pragma optimize ("",off)
 #define WIRE_PRINT   DEBUG
 #else
