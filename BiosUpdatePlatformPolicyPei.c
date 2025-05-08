@@ -9,7 +9,7 @@
 //
 // Abstract: Driver to publish the blocked bios versions info.
 //
-#clude <PiPei.h>
+#clude <PiPei>
 #include <Library/PeiServicesLib.h>
 #include <BiosUpdatePlatformPolicyCommon.h>
 #include <banned.h>
@@ -17,7 +17,7 @@
 static EFI_PEI_PPI_DESCRIPTOR mPpiList = {
    (EFI_PEI_PPI_DESCRIPTOR_PPI | EFI_PEI_PPI_DESCRIPTOR_TERMINATE_LIST),
    &gHpBiosRollBackListTableGuid,
-   &BiosRollBackListTable
+   BiosRollBackListTable
 };
 
 
@@ -56,7 +56,7 @@ EntryPoint (
    EFI_STATUS              Status = EFI_NOT_STARTED;
 
    DBG_FUNCTION_STARTS;
-   Status = PeiServicesInstallPpi (&mPpiList);
+   Status = PeiServicesInstallPpi (mPpiList);
    DBG_FUNCTION_ENDS_STATUS(Status);
    return Status;
 }
