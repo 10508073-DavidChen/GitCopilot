@@ -9,7 +9,7 @@
 //
 // Abstract: Driver to publish the blocked bios versions info.
 //
-#include <PiPei.h>
+#clude <PiPei.h>
 #include <Library/PeiServicesLib.h>
 #include <BiosUpdatePlatformPolicyCommon.h>
 #include <banned.h>
