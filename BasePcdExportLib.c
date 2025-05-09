@@ -37,7 +37,7 @@ UINTN GetFlashPartSize(VOID)
    return (UINTN)PcdGet32(PcdFlashPartSize);
 }
 
-UINT8 * GetPeiA1Base(VOID)
+UINT8  GetPeiA1Base(VOID)
 {
    volatile UINTN Address = PcdGet32(PcdFlashFvRecoveryBase);
    return (UINT8 *)Address;
