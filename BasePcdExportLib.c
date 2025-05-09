@@ -21,7 +21,7 @@
 //    lockup seen on release builds only. Do not remove the volatile!
 //
 
-UINT8  GetFlashBase(VOID)
+INT8  GetFlashBase(VOID)
 {
    volatile UINTN Address = PcdGet32(PcdFlashAreaBaseAddress);
    return (UINT8 *)Address;
