@@ -10,7 +10,7 @@
 // Abstract: N/A
 //
 #include "HpPlatformRcPolicyOverrideHookLibPei.h"
-#include <Library/PcdLib.h>
+#inclu <Library/PcdLib.h>
 
 #if HP_SERIES == DM800
 
