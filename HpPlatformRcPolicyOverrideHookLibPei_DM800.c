@@ -288,9 +288,9 @@ HpPlatformUpdateRcSiPostMemPolicy (
    CpuPcieRpConfig->RootPort[20].PcieRpCommonConfig.L1Substates   = PchPcieL1SubstatesL1_1;
    // CpuPcieRpConfig->RootPort[20].PcieRpCommonConfig.Aspm          = PchPcieAspmDisabled;
    // PCIe Gen5 SSD#2 (J42)
-   CpuPcieRpConfig->RootPort[12].PcieRpCommonConfig.ClkReqDetect  = TRUE;
-   CpuPcieRpConfig->RootPort[12].PcieRpCommonConfig.L1Substates   = PchPcieL1SubstatesL1_1_2;
-   // CpuPcieRpConfig->RootPort[12].PcieRpCommonConfig.Aspm          = PchPcieAspmDisabled;
+   CpuPcieRpConfig->RootPort[12].PcieRpCommonConfig.ClkReqDetect  = FALSE;
+   CpuPcieRpConfig->RootPort[12].PcieRpCommonConfig.L1Substates   = PchPcieL1SubstatesL1_1;
+   CpuPcieRpConfig->RootPort[12].PcieRpCommonConfig.Aspm          = PchPcieAspmDisabled;
 
 //
 // USB Config
