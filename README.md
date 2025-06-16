@@ -1,2 +1,0 @@
-# GitCopilot
-# Apeending
